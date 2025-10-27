@@ -1,0 +1,65 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import "tailwindcss";
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+@theme {
+  --color-primary: #33339c;
+  --color-brand-dark: #0d8ddb;
+  --color-brand-light: #4db8ff;
+
+  /* Wedding theme colors */
+  --color-wedding-primary: #d4a574;
+  --color-wedding-secondary: #b8956a;
+  --color-wedding-accent: #f5e6d3;
+  --color-wedding-dark: #043703;
+  --color-wedding-text: #3b3f3b;
+  --color-wedding-text-light: #888888;
+  --color-wedding-white: #ffffff;
+}
+
+@utility wedding-heading {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui,
+    sans-serif;
+  font-size: 44.6px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--color-wedding-primary);
+}
+
+@utility wedding-subtitle {
+  font-family: Georgia, serif;
+  font-size: 19.2px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-wedding-secondary);
+}
+
+@utility wedding-body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui,
+    sans-serif;
+  font-size: 19.2px;
+  font-weight: 400;
+  line-height: 38.4px;
+  color: var(--color-wedding-text);
+}
+
+@utility wedding-hero-title {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui,
+    sans-serif;
+  font-size: 58.3px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--color-wedding-white);
+}
+
+@utility wedding-hero-subtitle {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-wedding-white);
+}
