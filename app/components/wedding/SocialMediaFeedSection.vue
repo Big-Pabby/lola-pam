@@ -13,11 +13,12 @@
       </h3>
 
       <!-- Posts Grid -->
-      <div class="grid md:grid-cols-2 items-start gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-6">
         <!-- Instagram Post 1 -->
         <iframe
           src="https://platform.twitter.com/embed/Tweet.html?id=1797947107753783414"
-          class="w-full h-[550px] max-w-[550px]"
+          class="w-full h-64 sm:h-80 md:h-[550px]"
+          loading="lazy"
           frameborder="0"
           scrolling="no"
           allowtransparency="true"
@@ -26,7 +27,8 @@
         <!-- Twitter/X Post 1 -->
         <iframe
           :src="`https://platform.twitter.com/embed/Tweet.html?id=1891206388199678035`"
-          class="w-full h-[550px] max-w-[550px]"
+          class="w-full h-64 sm:h-80 md:h-[550px]"
+          loading="lazy"
           frameborder="0"
           scrolling="no"
           allowtransparency="true"
@@ -35,7 +37,8 @@
         <!-- Twitter/X Post 2 -->
         <iframe
           :src="`https://platform.twitter.com/embed/Tweet.html?id=1925226301981437973`"
-          class="w-full h-[550px] max-w-[550px]"
+          class="w-full h-64 sm:h-80 md:h-[550px]"
+          loading="lazy"
           frameborder="0"
           scrolling="no"
           allowtransparency="true"
@@ -44,7 +47,8 @@
         <!-- Instagram Post 2 -->
         <iframe
           :src="`https://platform.twitter.com/embed/Tweet.html?id=1792661861143368048`"
-         class="w-full h-[550px] max-w-[550px]"
+          class="w-full h-64 sm:h-80 md:h-[550px]"
+          loading="lazy"
           frameborder="0"
           scrolling="no"
           allowtransparency="true"

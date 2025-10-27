@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-[100px]">
-    <section class="relative h-screen w-full overflow-hidden pb-8">
+  <div class="mt-24 sm:mt-[100px]">
+    <section class="relative h-[85vh] sm:h-screen w-full overflow-hidden pb-8">
       <!-- Background Images with Slide Transition -->
       <div class="absolute inset-0">
         <transition-group name="slide">
@@ -10,7 +10,7 @@
             v-show="index === currentImageIndex"
             :src="image"
             alt="Wedding celebration"
-            class="absolute inset-0 w-full h-full object-cover"
+            class="absolute inset-0 w-full h-full object-cover object-center"
           />
         </transition-group>
       </div>
@@ -21,11 +21,15 @@
       <!-- Content -->
       <div class="relative h-full flex flex-col items-center justify-end">
         <div class="text-center px-6 max-w-4xl mx-auto">
-          <div class="bg-[#00000066] py-6 px-32 rounded-xl">
-            <h1 class="wedding-hero-title leading-16 mb-2 animate-fade-in">
+          <div class="bg-[#00000066] py-4 sm:py-6 px-6 sm:px-32 rounded-xl">
+            <h1
+              class="wedding-hero-title text-3xl sm:text-6xl leading-8 sm:leading-16 mb-2 animate-fade-in"
+            >
               We're Getting<br />Married!
             </h1>
-            <p class="wedding-hero-subtitle animate-fade-in-delay">
+            <p
+              class="wedding-hero-subtitle text-base sm:text-lg animate-fade-in-delay"
+            >
               Join us as we celebrate our love
             </p>
           </div>
@@ -37,8 +41,10 @@
               :key="index"
               @click="currentImageIndex = index"
               :class="[
-                'w-3 h-3 rounded-full transition-all',
-                currentImageIndex === index ? 'bg-white w-8' : 'bg-white/50',
+                'w-3 h-3 rounded-full transform transition-transform duration-300',
+                currentImageIndex === index
+                  ? 'bg-white scale-150'
+                  : 'bg-white/50 scale-100',
               ]"
               :aria-label="`Go to slide ${index + 1}`"
             />
