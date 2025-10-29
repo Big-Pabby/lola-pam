@@ -1,7 +1,7 @@
 <template>
   <div class="wedding-page">
     <!-- Nav - immediate animation -->
-    <div >
+    <div>
       <WeddingNav />
     </div>
 
@@ -46,7 +46,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted } from 'vue';
+import { onMounted, onUnmounted } from "vue";
 import WeddingNav from "~/components/wedding/WeddingNav.vue";
 import WeddingHero from "~/components/wedding/WeddingHero.vue";
 import OurStorySection from "~/components/wedding/OurStorySection.vue";
@@ -66,6 +66,27 @@ useHead({
       content:
         "Join us as we celebrate our love - Wedding of Christianah & Isreal",
     },
+    {
+      property: "og:title",
+      content: "We're Getting Married! - Chris & Christianah",
+    },
+    {
+      property: "og:description",
+      content:
+        "Join us as we celebrate our love - Wedding of Christianah & Isreal",
+    },
+    {
+      property: "og:image",
+      content: "/cover.png",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:image",
+      content: "/cover.png",
+    },
   ],
 });
 
@@ -77,9 +98,9 @@ onMounted(() => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const delay = entry.target.getAttribute('data-delay') || '0';
+          const delay = entry.target.getAttribute("data-delay") || "0";
           setTimeout(() => {
-            entry.target.classList.add('animated');
+            entry.target.classList.add("animated");
           }, parseInt(delay));
           // Optional: stop observing after animation
           observer?.unobserve(entry.target);
@@ -88,12 +109,12 @@ onMounted(() => {
     },
     {
       threshold: 0.1, // Trigger when 10% of element is visible
-      rootMargin: '0px 0px -50px 0px' // Trigger slightly before element enters viewport
+      rootMargin: "0px 0px -50px 0px", // Trigger slightly before element enters viewport
     }
   );
 
   // Observe all animate-section elements
-  const sections = document.querySelectorAll('.animate-section');
+  const sections = document.querySelectorAll(".animate-section");
   sections.forEach((section) => {
     observer?.observe(section);
   });
@@ -116,7 +137,7 @@ onUnmounted(() => {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Animated state - visible */
