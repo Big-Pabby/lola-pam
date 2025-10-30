@@ -22,7 +22,7 @@
           class="text-base sm:text-[19.2px] italic text-[#ebebeb]"
           style="font-family: Georgia, serif"
         >
-          Two years of love and laughter
+          5 years of love and laughter
         </p>
       </div>
 
