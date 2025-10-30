@@ -88,7 +88,7 @@ useHead({
     },
     {
       property: "og:image",
-      content: "https://lola-pamilerin.live/cover.png",
+      content: "https://lola-pamilerin.live/cover.jpg",
     },
 
     // Twitter Meta Tags
@@ -115,7 +115,7 @@ useHead({
     },
     {
       name: "twitter:image",
-      content: "https://lola-pamilerin.live/cover.png",
+      content: "https://lola-pamilerin.live/cover.jpg",
     },
   ],
 });
