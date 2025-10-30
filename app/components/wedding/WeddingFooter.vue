@@ -50,7 +50,7 @@
       class="text-[18px] font-semibold tracking-[-0.54px] text-[#575a57]"
       style="font-family: 'Open Sans', sans-serif"
     >
-      Built by Pabby
+      Built by <a href="https://github.com/Big-Pabby" class="hover:underline" target="_blank"> Pabby</a>
     </span>
     <span class="w-1 h-1 rounded-full bg-[#bfc1bf]" />
     <span
