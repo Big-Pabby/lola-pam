@@ -8,7 +8,7 @@
       
       <div class="space-y-8">
         <p class="wedding-body text-center">
-          Two years ago, our paths crossed in the most unexpected way, and from that moment, 
+          5 years ago, our paths crossed in the most unexpected way, and from that moment, 
           we knew something special was beginning. Through laughter, adventures, and countless 
           memories, our love has grown stronger with each passing day.
         </p>

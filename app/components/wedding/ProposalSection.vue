@@ -100,11 +100,13 @@
             by love and the promise of a beautiful future together.
           </p>
 
-          <button
+          <a
+          href="https://drive.google.com/drive/folders/1PtEQfmqKebArBaspmytFNlM2xgCnd0A6"
+          target="_blank"
             class="px-6 py-2 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors"
           >
             See All
-          </button>
+          </a>
         </div>
       </div>
     </div>

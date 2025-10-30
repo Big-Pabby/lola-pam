@@ -29,85 +29,85 @@
       <!-- Photo Collage -->
       <div class="grid grid-cols-12 gap-4 mb-12">
         <!-- Row 1 -->
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-1.png"
             alt="Memory 1"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-2.png"
             alt="Memory 2"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-3.jpg"
             alt="Memory 3"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-9.png"
             alt="Memory 9"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
 
         <!-- Row 2 -->
-        <div class="col-span-12 md:col-span-4">
+        <div class="col-span-12 md:col-span-4 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-4.png"
             alt="Memory 4"
-            class="w-full h-[400px] md:h-[189px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[189px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-4">
+        <div class="col-span-12 md:col-span-4 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-5.png"
             alt="Memory 5"
-            class="w-full h-[400px] md:h-[189px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[189px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-4">
+        <div class="col-span-12 md:col-span-4 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-10.png"
             alt="Memory 10"
-            class="w-full h-[400px] md:h-[189px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[189px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
 
         <!-- Row 3 -->
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-6.png"
             alt="Memory 6"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-7.png"
             alt="Memory 7"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-11.png"
             alt="Memory 11"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
-        <div class="col-span-12 md:col-span-3">
+        <div class="col-span-12 md:col-span-3 group overflow-hidden rounded-lg">
           <img
             src="/wedding/memory-8.png"
             alt="Memory 8"
-            class="w-full h-[400px] md:h-[438px] object-cover rounded-lg"
+            class="w-full h-[400px] md:h-[438px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:brightness-110"
           />
         </div>
       </div>

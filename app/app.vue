@@ -61,10 +61,21 @@ import WeddingFooter from "~/components/wedding/WeddingFooter.vue";
 useHead({
   title: "We're Getting Married! - Chris & Christianah",
   meta: [
+    // HTML Meta Tags
     {
       name: "description",
       content:
         "Join us as we celebrate our love - Wedding of Christianah & Isreal",
+    },
+
+    // Facebook Meta Tags
+    {
+      property: "og:url",
+      content: "https://www.lola-pamilerin.live/",
+    },
+    {
+      property: "og:type",
+      content: "website",
     },
     {
       property: "og:title",
@@ -77,15 +88,34 @@ useHead({
     },
     {
       property: "og:image",
-      content: "/cover.png",
+      content: "https://lola-pamilerin.live/cover.png",
     },
+
+    // Twitter Meta Tags
     {
       name: "twitter:card",
       content: "summary_large_image",
     },
     {
+      property: "twitter:domain",
+      content: "lola-pamilerin.live",
+    },
+    {
+      property: "twitter:url",
+      content: "https://www.lola-pamilerin.live/",
+    },
+    {
+      name: "twitter:title",
+      content: "We're Getting Married! - Chris & Christianah",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Join us as we celebrate our love - Wedding of Christianah & Isreal",
+    },
+    {
       name: "twitter:image",
-      content: "/cover.png",
+      content: "https://lola-pamilerin.live/cover.png",
     },
   ],
 });
