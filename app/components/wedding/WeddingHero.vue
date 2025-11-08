@@ -20,7 +20,7 @@
 
       <!-- Content -->
       <div class="relative h-full flex flex-col items-center justify-end">
-        <div class="text-center px-6 max-w-4xl mx-auto">
+        <div class="text-center space-y-6 px-6 max-w-4xl mx-auto">
           <div class="bg-[#00000066] py-4 sm:py-6 px-6 sm:px-32 rounded-xl">
             <h1
               class="wedding-hero-title text-3xl sm:text-6xl leading-8 sm:leading-16 mb-2 animate-fade-in"
@@ -33,6 +33,13 @@
               Join us as we celebrate our love
             </p>
           </div>
+          <a
+            href="https://clients.leyeojeniyi.com/lolaandpamilerinprewedding/"
+            target="_blank"
+            class="px-6 mt-6 py-3 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors"
+          >
+            Download Pictures
+          </a>
 
           <!-- Carousel Indicators -->
           <div class="flex justify-center gap-2 mt-8">
