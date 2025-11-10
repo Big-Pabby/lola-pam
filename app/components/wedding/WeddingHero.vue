@@ -4,31 +4,40 @@
       <!-- Background Images with Slide Transition -->
       <div class="absolute inset-0">
         <transition-group name="slide">
-          <img
+          <div
             v-for="(image, index) in heroImages"
             :key="image"
             v-show="index === currentImageIndex"
-            :src="image"
-            alt="Wedding celebration"
-            class="absolute inset-0 w-full h-full object-cover object-center"
-          />
+            class="absolute inset-0 w-full h-full"
+          >
+            <img
+              :src="image"
+              alt="Wedding celebration"
+              class="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <!-- Green gradient overlay -->
+            <div
+              class="absolute inset-0 "
+            />
+          </div>
         </transition-group>
       </div>
 
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/40" />
-
-      <!-- Content -->
-      <div class="relative h-full flex flex-col items-center justify-center">
-        <div class="text-center space-y-6 px-6 max-w-4xl mx-auto">
-          <div class="bg-[#00000066] py-4 sm:py-6 px-6 sm:px-32 rounded-xl">
+      <!-- Fixed Content -->
+      <div
+        class="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none"
+      >
+        <div class="text-center space-y-8 px-6 max-w-4xl mx-auto">
+          <div
+            class="bg-[#00000066] py-8 sm:py-10 px-8 sm:px-32 rounded-2xl shadow-2xl"
+          >
             <h1
-              class="wedding-hero-title text-3xl sm:text-6xl leading-8 sm:leading-16 mb-2 animate-fade-in"
+              class="wedding-hero-title text-4xl sm:text-6xl font-bold leading-tight sm:leading-tight mb-4 animate-fade-in text-white"
             >
               We're Getting<br />Married!
             </h1>
             <p
-              class="wedding-hero-subtitle text-base sm:text-lg animate-fade-in-delay"
+              class="wedding-hero-subtitle text-lg sm:text-xl animate-fade-in-delay text-white/90"
             >
               Join us as we celebrate our love
             </p>
@@ -39,13 +48,13 @@
             <a
               href="https://clients.leyeojeniyi.com/lolaandpamilerinprewedding/"
               target="_blank"
-              class="px-6 py-3 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors"
+              class="px-6 py-3 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors pointer-events-auto"
             >
               Download Pictures
             </a>
             <button
               @click="directionsModal.showModal()"
-              class="px-6 cursor-pointer py-3 bg-white text-[#065A05] text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-gray-100 transition-colors"
+              class="px-6 cursor-pointer py-3 bg-white text-[#065A05] text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-gray-100 transition-colors pointer-events-auto"
             >
               Get Directions
             </button>
@@ -54,14 +63,14 @@
 
         <!-- Carousel Indicators -->
         <div
-          class="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-3"
+          class="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-3 pointer-events-auto"
         >
           <button
             v-for="(_, index) in heroImages"
             :key="index"
             @click="currentImageIndex = index"
             :class="[
-              'w-2.5 h-2.5 rounded-full transform transition-all duration-300',
+              'w-2.5 h-2.5 rounded-full transform transition-all duration-300 hover:scale-150',
               currentImageIndex === index
                 ? 'bg-white scale-125'
                 : 'bg-white/40 hover:bg-white/60 scale-100',
@@ -103,47 +112,49 @@ onUnmounted(() => {
 <style scoped>
 /* Slide transition for images */
 .slide-enter-active {
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
 }
 
 .slide-leave-active {
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 
 .slide-enter-from {
-  transform: translateX(100%);
+  transform: scale(1.1);
   opacity: 0;
 }
 
 .slide-leave-to {
-  transform: translateX(-100%);
+  transform: scale(0.9);
   opacity: 0;
 }
 
 .slide-enter-to,
 .slide-leave-from {
-  transform: translateX(0);
+  transform: scale(1);
   opacity: 1;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
+    filter: blur(5px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
   }
 }
 
 .animate-fade-in {
-  animation: fadeIn 1s ease-out;
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animate-fade-in-delay {
-  animation: fadeIn 1s ease-out 0.3s both;
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
 </style>
