@@ -79,10 +79,9 @@
                     </svg>
                     Engagement Venue
                   </h4>
-                  <p class="text-gray-600 mb-3">123 Engagement Street, Lagos</p>
-                  <a
-                    href="https://maps.google.com/?q=123+Engagement+Street+Lagos"
-                    target="_blank"
+                
+                  <button
+                  
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -98,7 +97,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </a>
+                </button>
                 </div>
                 <!-- Church Venue -->
                 <div
@@ -123,10 +122,9 @@
                     </svg>
                     Church Venue
                   </h4>
-                  <p class="text-gray-600 mb-3">456 Church Avenue, Lagos</p>
-                  <a
-                    href="https://maps.google.com/?q=456+Church+Avenue+Lagos"
-                    target="_blank"
+                 
+                  <button
+                    
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -142,7 +140,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </a>
+                </button>
                 </div>
                 <!-- Reception Venue -->
                 <div
@@ -167,10 +165,9 @@
                     </svg>
                     Reception Venue
                   </h4>
-                  <p class="text-gray-600 mb-3">789 Reception Hall, Lagos</p>
-                  <a
-                    href="https://maps.google.com/?q=789+Reception+Hall+Lagos"
-                    target="_blank"
+                 
+                  <button
+                   
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -186,7 +183,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </a>
+                </button>
                 </div>
                 <!-- Hotel -->
                 <div
@@ -211,10 +208,9 @@
                     </svg>
                     Hotel
                   </h4>
-                  <p class="text-gray-600 mb-3">321 Luxury Hotel, Lagos</p>
-                  <a
-                    href="https://maps.google.com/?q=321+Luxury+Hotel+Lagos"
-                    target="_blank"
+                 
+                  <button
+                   
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -230,7 +226,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                  </a>
+                </button>
                 </div>
               </div>
             </div>
