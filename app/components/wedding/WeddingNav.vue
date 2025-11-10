@@ -3,7 +3,7 @@
     class="fixed top-0 left-0 right-0 z-50 bg-[#FBF5EA] backdrop-blur-sm shadow-sm"
   >
     <div
-      class="container mx-auto px-6 py-4 flex md:flex-col items-center justify-between"
+      class="container mx-auto px-6 py-4 flex flex-row! w-full items-center justify-between"
     >
       <button @click="scrollToTop" class="flex items-center">
         <img
@@ -22,6 +22,12 @@
         >
           {{ item.label }}
         </a>
+      </div>
+      <div
+        @click="directionsModal.showModal()"
+        class="hidden md:block px-6 cursor-pointer py-3 bg-white text-[#065A05] text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-gray-100 transition-colors"
+      >
+        Get Directions
       </div>
 
       <button
@@ -57,6 +63,12 @@
         >
           {{ item.label }}
         </a>
+        <button
+          @click="handleMobileDirections"
+          class="mt-2 inline-block! text-center px-6 py-3 bg-[#065A05]/10 text-[#065A05] text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#065A05] hover:text-white transition-colors"
+        >
+          Get Directions
+        </button>
       </div>
     </div>
   </nav>
@@ -73,6 +85,7 @@ const navItems = [
   { id: "invitation", label: "Get IV" },
 ];
 
+const directionsModal = useDirectionsModal();
 const isMenuOpen = ref(false);
 
 const toggleMenu = () => {
@@ -84,6 +97,11 @@ const scrollToTop = () => {
     top: 0,
     behavior: "smooth",
   });
+};
+
+const handleMobileDirections = () => {
+  directionsModal.showModal();
+  toggleMenu(); // Close the mobile menu after clicking
 };
 </script>
 

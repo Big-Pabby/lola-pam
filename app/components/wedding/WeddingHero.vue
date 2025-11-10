@@ -19,7 +19,7 @@
       <div class="absolute inset-0 bg-black/40" />
 
       <!-- Content -->
-      <div class="relative h-full flex flex-col items-center justify-end">
+      <div class="relative h-full flex flex-col items-center justify-center">
         <div class="text-center space-y-6 px-6 max-w-4xl mx-auto">
           <div class="bg-[#00000066] py-4 sm:py-6 px-6 sm:px-32 rounded-xl">
             <h1
@@ -33,29 +33,41 @@
               Join us as we celebrate our love
             </p>
           </div>
-          <a
-            href="https://clients.leyeojeniyi.com/lolaandpamilerinprewedding/"
-            target="_blank"
-            class="px-6 mt-6 py-3 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors"
+          <div
+            class="flex flex-col sm:flex-row gap-4 md:items-center items-stretch justify-center"
           >
-            Download Pictures
-          </a>
-
-          <!-- Carousel Indicators -->
-          <div class="flex justify-center gap-2 mt-8">
+            <a
+              href="https://clients.leyeojeniyi.com/lolaandpamilerinprewedding/"
+              target="_blank"
+              class="px-6 py-3 bg-[#065A05] text-white text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-[#054504] transition-colors"
+            >
+              Download Pictures
+            </a>
             <button
-              v-for="(_, index) in heroImages"
-              :key="index"
-              @click="currentImageIndex = index"
-              :class="[
-                'w-3 h-3 rounded-full transform transition-transform duration-300',
-                currentImageIndex === index
-                  ? 'bg-white scale-150'
-                  : 'bg-white/50 scale-100',
-              ]"
-              :aria-label="`Go to slide ${index + 1}`"
-            />
+              @click="directionsModal.showModal()"
+              class="px-6 cursor-pointer py-3 bg-white text-[#065A05] text-[15.2px] font-medium tracking-wider rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              Get Directions
+            </button>
           </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div
+          class="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-3"
+        >
+          <button
+            v-for="(_, index) in heroImages"
+            :key="index"
+            @click="currentImageIndex = index"
+            :class="[
+              'w-2.5 h-2.5 rounded-full transform transition-all duration-300',
+              currentImageIndex === index
+                ? 'bg-white scale-125'
+                : 'bg-white/40 hover:bg-white/60 scale-100',
+            ]"
+            :aria-label="`Go to slide ${index + 1}`"
+          />
         </div>
       </div>
     </section>
@@ -73,8 +85,9 @@ const heroImages = [
 ];
 
 const currentImageIndex = ref(0);
+const directionsModal = useDirectionsModal();
 
-let intervalId: NodeJS.Timeout | null = null;
+let intervalId: ReturnType<typeof setInterval> | null = null;
 
 onMounted(() => {
   intervalId = setInterval(() => {

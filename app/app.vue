@@ -1,9 +1,14 @@
 <template>
   <div class="wedding-page">
+    <!-- Global Modal -->
+    <DirectionsModal
+      :is-open="directionsModal.isModalOpen.value"
+      @close="directionsModal.hideModal"
+    />
+
     <!-- Nav - immediate animation -->
     <div>
       <WeddingNav />
-    </div>
 
     <!-- Hero - immediate animation -->
     <div class="animate-section" data-delay="100">
@@ -43,12 +48,16 @@
       <WeddingFooter />
     </div>
   </div>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 import WeddingNav from "~/components/wedding/WeddingNav.vue";
 import WeddingHero from "~/components/wedding/WeddingHero.vue";
+import DirectionsModal from "~/components/wedding/DirectionsModal.vue";
+
+const directionsModal = useDirectionsModal();
 import OurStorySection from "~/components/wedding/OurStorySection.vue";
 import ProposalSection from "~/components/wedding/ProposalSection.vue";
 import NotableMemoriesSection from "~/components/wedding/NotableMemoriesSection.vue";
