@@ -19,7 +19,7 @@
       >
         <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
           <div class="sm:flex sm:items-start">
-            <div class="mt-3  sm:mt-0 text-left w-full">
+            <div class="mt-3 sm:mt-0 text-left w-full">
               <div
                 class="flex items-center justify-between mb-8 border-b border-gray-100 pb-4"
               >
@@ -79,9 +79,10 @@
                     </svg>
                     Engagement Venue
                   </h4>
-                
-                  <button
-                  
+
+                  <a
+                    href="https://maps.app.goo.gl/baYr1JXvGZmdBc679?g_st=ic"
+                    target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -97,7 +98,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                </button>
+                  </a>
                 </div>
                 <!-- Church Venue -->
                 <div
@@ -122,9 +123,10 @@
                     </svg>
                     Church Venue
                   </h4>
-                 
-                  <button
-                    
+
+                  <a
+                    href="https://maps.app.goo.gl/xCQoZAX62NLXNaGD9?g_st=ipc"
+                    target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -140,7 +142,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                </button>
+                  </a>
                 </div>
                 <!-- Reception Venue -->
                 <div
@@ -165,9 +167,10 @@
                     </svg>
                     Reception Venue
                   </h4>
-                 
-                  <button
-                   
+
+                  <a
+                    href="https://maps.app.goo.gl/Gom58gE3NK9cBkn9A?g_st=ipc"
+                    target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -183,7 +186,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                </button>
+                  </a>
                 </div>
                 <!-- Hotel -->
                 <div
@@ -208,9 +211,10 @@
                     </svg>
                     Hotel
                   </h4>
-                 
-                  <button
-                   
+
+                  <a
+                    href="https://maps.app.goo.gl/nMqi8wzRv8djSBrp9?g_st=ipc"
+                    target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
                     <span>Get Directions</span>
@@ -226,7 +230,7 @@
                         clip-rule="evenodd"
                       />
                     </svg>
-                </button>
+                  </a>
                 </div>
               </div>
             </div>
