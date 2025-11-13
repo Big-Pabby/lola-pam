@@ -169,7 +169,7 @@
                   </h4>
 
                   <a
-                    href="https://maps.app.goo.gl/Gom58gE3NK9cBkn9A?g_st=ipc"
+                    href="https://maps.app.goo.gl/nMqi8wzRv8djSBrp9?g_st=ipc"
                     target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
@@ -213,7 +213,7 @@
                   </h4>
 
                   <a
-                    href="https://maps.app.goo.gl/nMqi8wzRv8djSBrp9?g_st=ipc"
+                    href="https://maps.app.goo.gl/Gom58gE3NK9cBkn9A?g_st=ipc"
                     target="_blank"
                     class="inline-flex items-center px-4 py-2 rounded-lg bg-[#065A05]/10 text-[#065A05] hover:bg-[#065A05] hover:text-white transition-colors"
                   >
